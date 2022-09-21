@@ -1,0 +1,112 @@
+[
+    {
+        "model":"mywatchlist.barangMyWatchList",
+        "pk":1,
+        "fields":{
+            "watched":"yes",
+            "title":"Kimi No Nawa",
+            "rating": "9",
+            "release_date": "08/10/2003",
+            "deskripsi": "bagus"
+        }
+},
+{
+        "model":"mywatchlist.barangMyWatchList",
+        "pk":2,
+        "fields":{
+            "watched":"yes",
+            "title":"Kimi No Nawa",
+            "rating": "9",
+            "release_date": "08/10/2003",
+            "deskripsi": "bagus"
+        }
+    },
+    {
+        "model":"mywatchlist.barangMyWatchList",
+        "pk":3,
+        "fields":{
+            "watched":"yes",
+            "title":"Kimi No Nawa",
+            "rating": "9",
+            "release_date": "08/10/2003",
+            "deskripsi": "bagus"
+        }
+    },
+    {
+        "model":"mywatchlist.barangMyWatchList",
+        "pk":4,
+        "fields":{
+            "watched":"yes",
+            "title":"Kimi No Nawa",
+            "rating": "9",
+            "release_date": "08/10/2003",
+            "deskripsi": "bagus"
+        }
+    },
+    {
+        "model":"mywatchlist.barangMyWatchList",
+        "pk":5,
+        "fields":{
+            "watched":"yes",
+            "title":"Kimi No Nawa",
+            "rating": "9",
+            "release_date": "08/10/2003",
+            "deskripsi": "bagus"
+        }
+    },
+    {
+        "model":"mywatchlist.barangMyWatchList",
+        "pk":6,
+        "fields":{
+            "watched":"yes",
+            "title":"Kimi No Nawa",
+            "rating": "9",
+            "release_date": "08/10/2003",
+            "deskripsi": "bagus"
+        }
+    },
+    {
+        "model":"mywatchlist.barangMyWatchList",
+        "pk":7,
+        "fields":{
+            "watched":"yes",
+            "title":"Kimi No Nawa",
+            "rating": "9",
+            "release_date": "08/10/2003",
+            "deskripsi": "bagus"
+        }
+    },
+    {
+        "model":"mywatchlist.barangMyWatchList",
+        "pk":8,
+        "fields":{
+            "watched":"yes",
+            "title":"Kimi No Nawa",
+            "rating": "9",
+            "release_date": "08/10/2003",
+            "deskripsi": "bagus"
+        }
+    },
+    {
+        "model":"mywatchlist.barangMyWatchList",
+        "pk":9,
+        "fields":{
+            "watched":"yes",
+            "title":"Kimi No Nawa",
+            "rating": "9",
+            "release_date": "08/10/2003",
+            "deskripsi": "bagus"
+        }
+    },
+    {
+        "model":"mywatchlist.barangMyWatchList",
+        "pk":10,
+        "fields":{
+            "watched":"yes",
+            "title":"Kimi No Nawa",
+            "rating": "9",
+            "release_date": "08/10/2003",
+            "deskripsi": "bagus"
+        }
+    }
+]
