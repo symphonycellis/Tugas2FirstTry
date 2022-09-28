@@ -2,6 +2,8 @@
 
  {% block content %}
 
+  <body bgcolor= #BDD9BF>
+
   <h1>Assignment 4 PBP/PBD : To Do List</h1>
 
   <h5>Username : </h5>
@@ -10,7 +12,7 @@
   <button><a href="{% url 'todolist:add_task' %}">Add task</a></button>
   <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
 
-  <table>
+  <table style = "background-color: #FFFFFF">
     <tr>
       <th>Date</th>
       <th>Task</th>
