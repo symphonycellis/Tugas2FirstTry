@@ -12,7 +12,9 @@
 
 <style>
     body {
-        background:#8ee4af
+        background-image:url(https://cdn.discordapp.com/attachments/1006821094231113820/1027370373051859044/c473619ba611a7dbe95df24ea55d2ca6.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .center-me {
         display: flex;
@@ -21,6 +23,12 @@
 
         height: 100vh;
       }
+    
+    .rcorners2 {
+        border-radius: 15px 50px 30px;
+        background: white;
+        
+    }
 
 </style>
 
@@ -30,7 +38,7 @@
 
 <div class = "center-me">
     <div class = "create">
-
+        <div class = "rcorners2">
         <h1>Add To Do List</h1>
     
         <form method="POST" action="">
@@ -51,6 +59,7 @@
     
             <input type="submit" name="submit" value="Add"/>
         </form>
+        </div>
     </div>
 
 </div>
