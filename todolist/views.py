@@ -16,6 +16,12 @@ import datetime
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 
+from django.core import serializers
+from django.http import HttpResponse
+from django.http import JsonResponse
+
+from django.views.decorators.csrf import csrf_exempt
+
 @login_required(login_url='/todolist/login/')
 def show_todolist(request):
     data = Task.objects.filter(user=request.user)
@@ -62,9 +68,33 @@ def add_task(request):
     if request.method == 'POST':
         title = request.POST.get('todo')
         description = request.POST.get('description')
-        date = datetime.datetime.now()
+        date = datetime.date.today()
         user = request.user
         Task.objects.create(title=title, description=description, date=date, user=user)
         response = HttpResponseRedirect(reverse("todolist:show_todolist")) 
         return response
     return render(request, "addtask.html")
+
+@login_required(login_url='/todolist/login/')
+def show_json(request):
+    task = Task.objects.filter(user=request.user)
+    return HttpResponse(serializers.serialize('json', task), content_type='application/json')
+
+@csrf_exempt
+def add_todolist(request):
+    if request.method == 'POST':
+        title = request.POST.get('title')
+        description = request.POST.get('description')
+        date = datetime.date.today()
+        user = request.user
+        todo = Task.objects.create(title=title, description=description, date=date, user=user)
+
+        result = {
+            'fields':{
+                'title':todo.title,
+                'description':todo.description,
+                'date':todo.date,
+            },
+            'pk':todo.pk
+        }
+        return JsonResponse(result)
